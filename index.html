@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Rising Medics Initiative</title>
 
-  <!-- Favicon (replace with your own file or image link) -->
-  <link rel="icon" type="image/png" href="RM_shortlogo_v3-removebg.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="RM_shortlogo_v3-removebg.png" sizes="64x64 128x128" />
 
-  <!-- Cute bubbly font -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font: Baloo 2 (cute, bubbly, and thicker) -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: "Quicksand", sans-serif;
+      font-family: "Baloo 2", sans-serif;
       color: #628567;
       background-color: white;
     }
@@ -30,21 +30,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 6px 35px;
+      padding: 8px 35px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       z-index: 1000;
     }
     .logo {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-size: 1.4em;
-      font-weight: 600;
+      gap: 12px;
+      font-size: 1.8em;
+      font-weight: 700;
       color: #628567;
     }
     .logo img {
-      height: 35px;
-      width: 35px;
+      height: 55px;
+      width: 55px;
       border-radius: 50%;
       object-fit: cover;
     }
@@ -52,10 +52,11 @@
     nav a {
       text-decoration: none;
       color: #628567;
-      margin: 0 8px;
+      margin: 0 10px;
       font-weight: 600;
       padding: 6px 10px;
       border-radius: 8px;
+      font-size: 1.05em;
       transition: all 0.3s ease;
     }
     nav a.active,
@@ -66,13 +67,13 @@
 
     /* SECTIONS */
     section {
-      min-height: 90vh;
+      min-height: 70vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 50px 20px;
-      scroll-margin-top: 70px;
+      padding: 40px 20px;
+      scroll-margin-top: 80px;
       text-align: center;
     }
 
@@ -81,15 +82,18 @@
       color: white;
     }
     #home h1 {
-      font-size: 2.5em;
-      margin-bottom: 5px;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    #home p {
+      font-size: 1.4em;
     }
     #home button {
       background-color: white;
       color: #628567;
       border: none;
-      padding: 10px 20px;
-      font-size: 1em;
+      padding: 12px 26px;
+      font-size: 1.1em;
       border-radius: 25px;
       cursor: pointer;
       margin-top: 15px;
@@ -109,14 +113,20 @@
     }
 
     h2 {
-      font-size: 1.8em;
+      font-size: 2.2em;
       margin-bottom: 10px;
       color: white;
     }
     p {
-      max-width: 600px;
-      font-size: 1em;
-      line-height: 1.5em;
+      max-width: 700px;
+      font-size: 1.25em;
+      line-height: 1.6em;
+      margin: 0 auto;
+    }
+
+    /* SPECIAL TEXT COLOR FOR ABOUT & DONATE */
+    #about p, #donate p {
+      color: #648568;
     }
 
     /* TEAM SECTION */
@@ -125,7 +135,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 25px;
-      margin-top: 20px;
+      margin-top: 15px;
     }
     .team-member {
       display: flex;
@@ -147,11 +157,11 @@
       height: 220px;
       object-fit: cover;
       border-radius: 12px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .team-member p {
       margin: 0;
-      font-size: 1em;
+      font-size: 1.1em;
       font-weight: 600;
     }
 
@@ -166,18 +176,18 @@
       background-color: white;
       color: #628567;
       border-radius: 15px;
-      padding: 20px;
+      padding: 18px;
       max-width: 400px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      font-size: 1.1em;
     }
-    .contact-info p { margin: 5px 0; }
+    .contact-info p { margin: 6px 0; }
   </style>
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <!-- Replace "logo.png" below with your image file -->
       <img src="RM_longlogo_v3-removebg.png" alt="Logo" />
       The Rising Medics Initiative
     </div>
@@ -197,7 +207,7 @@
 
   <section id="about">
     <h2>About Us</h2>
-    <p>The Rising Medics Initiative is run by two girls with a dream of providing underprivileged areas with free access to the healthcare and medical supplies they deserve. We aim to partner with different organizations to raise money for redistribution. We also hope to educate highschool students about biomedical engineering and medicine, as well as spread awareness about current issues in our world today. Join us in helping to make our dream come true, for every life we can touch.</p>
+    <p>The Rising Medics Initiative is run by two girls with a dream of providing underprivileged areas with free access to the healthcare and medical supplies they deserve. We aim to partner with different organizations to raise money for redistribution. We also hope to educate high school students about biomedical engineering and medicine, as well as spread awareness about current issues in our world today. Join us in helping to make our dream come true, for every life we can touch.</p>
   </section>
 
   <section id="team">
@@ -205,7 +215,6 @@
     <p>Meet our team!</p>
 
     <div class="team-gallery">
-      <!-- Replace image1.jpg and image2.jpg with your own image paths -->
       <div class="team-member">
         <img src="shrav_pic.jpeg" alt="Team Member 1" />
         <p>Shravani Anne — President, sophomore at the Illinois Math and Science Academy</p>
@@ -219,14 +228,14 @@
 
   <section id="donate">
     <h2>Donate</h2>
-    <p>Your generosity fuels our mission. Every contribution can make an huge impact and save lives, instill hope, and promote a future of health.</p>
+    <p>Your generosity fuels our mission. Every contribution can make a huge impact and save lives, instill hope, and promote a future of health.</p>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
     <div class="contact-info">
       <p><strong>Email:</strong> contact@risingmedics.org</p>
-      <p><strong>Located in:</strong>Naperville, IL USA</p>
+      <p><strong>Located in:</strong> Naperville, IL USA</p>
     </div>
   </section>
 
